@@ -1,0 +1,14 @@
+projectDesafioBackEnd/
+├── app/
+│   ├── models/
+│   ├── views/
+│   ├── serializers/
+│   ├── tests/
+│   ├── urls.py
+├── config/
+│   ├── settings.py
+│   ├── urls.py
+├── docker-compose.yml
+├── Dockerfile
+├── requirements.txt
+└── README.md
