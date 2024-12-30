@@ -1,0 +1,13 @@
+# app/models.py
+from django.contrib.gis.db import models
+
+class Partner(models.Model):
+    id = models.CharField(max_length=255, primary_key=True)
+    trading_name = models.CharField(max_length=255)
+    owner_name = models.CharField(max_length=255)
+    document = models.CharField(max_length=255, unique=True)
+    coverage_area = models.MultiPolygonField()
+    address = models.PointField()
+
+    def __str__(self):
+        return self.trading_name
