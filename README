@@ -1,0 +1,55 @@
+# README.md
+"""
+# Desafio Backend
+
+## Configuração do Projeto
+
+1. Clone este repositório e entre na pasta do projeto:
+
+```bash
+$ git clone <repo-url>
+$ cd desafio_backend
+```
+
+2. Configure o ambiente virtual e instale as dependências:
+
+```bash
+$ python3 -m venv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+
+3. Configure o banco de dados PostgreSQL com PostGIS:
+
+```sql
+CREATE DATABASE your_database_name;
+CREATE EXTENSION postgis;
+```
+
+4. Aplique as migrações:
+
+```bash
+$ python manage.py migrate
+```
+
+5. Inicie o servidor:
+
+```bash
+$ python manage.py runserver
+```
+
+## Endpoints
+
+- **Criar parceiro:** `POST /partners`
+- **Buscar parceiro por ID:** `GET /partners/<id>`
+- **Buscar parceiro mais próximo:** `GET /partners/nearest?long=<longitude>&lat=<latitude>`
+
+## Testes
+
+Rode os testes com:
+
+```bash
+$ python manage.py test
+```
+
+"""
